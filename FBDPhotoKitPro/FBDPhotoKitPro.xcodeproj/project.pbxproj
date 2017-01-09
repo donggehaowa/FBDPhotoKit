@@ -13,6 +13,8 @@
 		B2E9BBEE1E23285100449B5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E9BBEC1E23285100449B5E /* Main.storyboard */; };
 		B2E9BBF01E23285100449B5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2E9BBEF1E23285100449B5E /* Assets.xcassets */; };
 		B2E9BBF31E23285100449B5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2E9BBF11E23285100449B5E /* LaunchScreen.storyboard */; };
+		B2E9BBFD1E2329C500449B5E /* FBDPhotoNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9BBFC1E2329C500449B5E /* FBDPhotoNavViewController.m */; };
+		B2E9BC001E2329F400449B5E /* FBDPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2E9BBFF1E2329F400449B5E /* FBDPhotoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		B2E9BBEF1E23285100449B5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2E9BBF21E23285100449B5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B2E9BBF41E23285100449B5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E9BBFB1E2329C500449B5E /* FBDPhotoNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDPhotoNavViewController.h; sourceTree = "<group>"; };
+		B2E9BBFC1E2329C500449B5E /* FBDPhotoNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDPhotoNavViewController.m; sourceTree = "<group>"; };
+		B2E9BBFE1E2329F400449B5E /* FBDPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDPhotoViewController.h; sourceTree = "<group>"; };
+		B2E9BBFF1E2329F400449B5E /* FBDPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBDPhotoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,10 @@
 		B2E9BBFA1E23289B00449B5E /* FBDPhotoFrameWork */ = {
 			isa = PBXGroup;
 			children = (
+				B2E9BBFB1E2329C500449B5E /* FBDPhotoNavViewController.h */,
+				B2E9BBFC1E2329C500449B5E /* FBDPhotoNavViewController.m */,
+				B2E9BBFE1E2329F400449B5E /* FBDPhotoViewController.h */,
+				B2E9BBFF1E2329F400449B5E /* FBDPhotoViewController.m */,
 			);
 			path = FBDPhotoFrameWork;
 			sourceTree = "<group>";
@@ -159,9 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B2E9BBFD1E2329C500449B5E /* FBDPhotoNavViewController.m in Sources */,
 				B2E9BBEB1E23285100449B5E /* ViewController.m in Sources */,
 				B2E9BBE81E23285100449B5E /* AppDelegate.m in Sources */,
 				B2E9BBE51E23285100449B5E /* main.m in Sources */,
+				B2E9BC001E2329F400449B5E /* FBDPhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

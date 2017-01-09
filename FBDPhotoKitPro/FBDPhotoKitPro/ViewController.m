@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import "FBDPhotoNavViewController.h"
+#import "FBDPhotoViewController.h"
 @interface ViewController ()
 
 @end
@@ -18,9 +19,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
+    UIButton* presentButton=[UIButton buttonWithType:UIButtonTypeSystem];
+    [presentButton setFrame:CGRectMake(20, 300, 100, 40)];
+    [presentButton setTitle:@"弹出" forState:UIControlStateNormal];
+    [presentButton setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [presentButton addTarget:self action:@selector(presentButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:presentButton];
     
+}
+#pragma mark-  弹出按钮事件
+-(void)presentButtonPressed
+{
+
+    FBDPhotoViewController* photoVC=[[FBDPhotoViewController alloc]init];
+    FBDPhotoNavViewController* photoNavVC=[[FBDPhotoNavViewController alloc]initWithRootViewController:photoVC];
+    [self presentViewController:photoNavVC animated:YES completion:nil];
     
-    
+
 }
 
 
